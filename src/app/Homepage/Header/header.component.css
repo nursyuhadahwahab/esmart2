@@ -1,0 +1,19 @@
+.header-main {
+  display: flex;
+  align-items: center;
+}
+
+.button-logout {
+  margin: 0;
+    height: 3.0rem;
+    width: 9rem;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(56, 176, 157);
+}
+
+nav{
+  display: flex;
+  background-color: transparent;
+  
+}

@@ -1,0 +1,130 @@
+<div class="header-main">
+  <div style="width: 5%;">
+    <a routerLink="/home" class="brand-logo">
+      <img
+        src="assets/PETRONAS.png"
+        style="
+          width: 72px;
+          height: 75px;
+          padding-left: 10px;
+          padding-top: 10px;
+        "
+      />
+    </a>
+  </div>
+  <div style="width: 85%;">
+    <p
+      class="glow-header font900"
+      style="font-size: 2.3rem; display: flex; justify-content: center;"
+    >
+      MLNG
+    </p>
+  </div>
+  <div style="width: 10%;">
+    <div style="margin-left: auto; order: 2; margin-right: 20px;">
+      <button class="button-logout" (click)="logout()">
+        <i class="small material-icons" style="float: right; cursor: pointer;"
+          >exit_to_app</i
+        >
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="parent">
+  <div
+    id="child"
+    class="glow-sidebar"
+    style="margin-left: 5px; align-items: center;"
+  >
+    <a
+      [routerLink]="[{ outlets: { tabname: ['summary'] } }]"
+      routerLinkActive="glow-sidebar-selected"
+      ><p class="font900">SUMMARY</p></a
+    >
+  </div>
+
+  <div
+    [routerLink]="[{ outlets: { tabname: ['ahi'] } }]"
+    routerLinkActive="router-link-active"
+    id="child"
+    style="margin-left: 5px; align-items: center;"
+    class="same"
+  >
+    <a><img src="assets/AHI logo latest.png " style="width: 80%;" /></a>
+  </div>
+
+  <div
+    [routerLink]="[{ outlets: { tabname: ['path'] } }]"
+    routerLinkActive="router-link-active"
+    id="child"
+    style="margin-left: 5px; align-items: center;"
+    class="same"
+  >
+    <a><img src="assets/path_logo-500x500.png" style="width: 105%;" /></a>
+  </div>
+
+  <div
+    [routerLink]="[{ outlets: { tabname: ['perfect'] } }]"
+    routerLinkActive="router-link-active"
+    id="child-perfect"
+    style="margin-left: 5px; align-items: center;"
+    class="same2"
+  >
+    <a
+      ><img src="assets/PERFECT - 500x500 latest-01.png" style="width: 65%;"
+    /></a>
+  </div>
+
+  <div id="child" class="coming-soon">
+    <p>COMING SOON !</p>
+  </div>
+
+  <div id="child" class="coming-soon">
+    <p>COMING SOON !</p>
+  </div>
+
+  <div id="child" class="coming-soon">
+    <p>COMING SOON !</p>
+  </div>
+
+  <div id="child" class="coming-soon">
+    <p>COMING SOON !</p>
+  </div>
+
+  <div
+    id="child-backbutton"
+    style="
+      background-color: rgba(0, 0, 0, 0);
+      /* color: rgb(77, 166, 250); */
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+    "
+  >
+    <p
+      class="font900"
+      style="
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        color: rgb(242, 176, 047);
+      "
+      routerLink="/home"
+    >
+      BACK
+    </p>
+  </div>
+</div>
+
+<!-- <div style="display: flex; justify-content: center; margin-top: 20px; margin-bottom: 20px;">
+    <div id="summary">
+        <router-outlet name='tabname'></router-outlet>
+    </div>
+</div> -->
+
+<div class="wrapper">
+  <div class="iframe-container">
+    <router-outlet name="tabname"></router-outlet>
+  </div>
+</div>

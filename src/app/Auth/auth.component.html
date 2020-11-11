@@ -1,0 +1,35 @@
+<div class="container4login">
+
+    <div class="logo">
+        <img class="col s6" src="assets/ESMART2.png" style="width:30%;height:30%;" />
+        <p class="ESMART-INDEX">ELECTRICAL SYSTEM MONITORING, ANALYTIC, AND REALTIME TRACKING</p>
+    </div>
+    <div style="margin-top: 50px;">
+        <p class="welcome font700">Welcome,</p>
+    </div>
+    <form [formGroup]="user" (ngSubmit)="login()" style="text-align: center; margin-top: 50px;">
+        <div class="row m-2 justify-content-center">
+            <div class="col-5">
+                <div class="input-group" style="display: flex; justify-content: center;">
+                    <div class="icon">
+                        <span class="input-group-text" id="basic-addon1">petronas\</span>
+                    </div>
+                    <input formControlName="username" class="form-control input-username" type="text" placeholder="Username">
+                </div>
+            </div>
+        </div>
+        <div class="row m-2 justify-content-center">
+            <div class="col-5">
+                <div class="input-group">
+                    <input formControlName="password" class="form-control input-password" type="password" placeholder="Password">
+                </div>
+            </div>
+        </div>
+        <div class="row font300 text-warning" *ngIf="error">Oppps! Your login failed!</div>
+        <div class="row mx-2 ">
+            <button class="button-login" [disabled]="!user.valid">
+                Login
+            </button>
+        </div>
+    </form>
+</div>

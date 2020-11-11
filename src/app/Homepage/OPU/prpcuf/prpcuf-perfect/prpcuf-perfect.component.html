@@ -1,0 +1,51 @@
+<div style="display: flex; width: 100%; height: 69vh;">
+   <div style="display: flex;width: 15%; color: aliceblue;">
+      <div class="content2" >
+         <div class="content-overlay"></div>
+         <!-- <img style="margin-top: 90px;" class="" src="assets/U7.png" /> -->
+         <div class="content-details2">
+           <div [routerLink]="[{ outlets: { navname: ['summary-prpcuf'] } }]"
+           routerLinkActive="router-link-active">
+             <p class="opu glow2 font900 opu-text" >Summary</p>
+         </div>
+         
+ 
+           <div [routerLink]="[{ outlets: { navname: ['RIS-perfect'] } }]"
+           routerLinkActive="router-link-active">
+             <p class="opu glow2 font900 opu-text" >Relay Inventory & Setting</p>
+        </div>
+ 
+           
+          <div [routerLink]="[{ outlets: { navname: ['CL-perfect'] } }]"
+          routerLinkActive="router-link-active">
+             <p class="opu glow2 font900 opu-text" >Calibration Library</p>
+          </div>
+ 
+           
+           <div [routerLink]="[{ outlets: { navname: ['OL-perfect'] } }]"
+           routerLinkActive="router-link-active">
+             <p class="opu glow2 font900 opu-text" >Obsolescence Library</p>
+           </div>
+
+           
+           <div [routerLink]="[{ outlets: { navname: ['MH-perfect'] } }]"
+           routerLinkActive="router-link-active">
+             <p class="opu glow2 font900 opu-text" >Maintenance History</p>
+           </div>
+
+         
+           <div [routerLink]="[{ outlets: { navname: ['SI-perfect'] } }]"
+           routerLinkActive="router-link-active">
+             <p class="opu glow2 font900 opu-text"  >Spare Inventory</p>
+           </div>
+         </div>
+       </div>
+   </div>
+   <div style="display: flex;width: 85%; height: 50vh;">
+    <router-outlet name="navname"></router-outlet>
+   </div>
+</div>
+
+
+
+

@@ -1,0 +1,14 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+.router-link-active {
+  color: rgb(253, 185, 036);
+}
+.router-link-active:focus {
+  outline: none;
+}

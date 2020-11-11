@@ -1,0 +1,69 @@
+
+<div style="display: flex; width: 100%; height: 69vh;">
+    <div style="display: flex;width: 15%; color: aliceblue;">
+       <div class="contentpgbperfect" >
+          <div class="content-overlay"></div>
+          <!-- <img style="margin-top: 90px;" class="" src="assets/U7.png" /> -->
+          <div class="content-details2">
+            <div [routerLink]="[{ outlets: { navname: ['summary-pgb'] } }]"
+            routerLinkActive="router-link-active">
+              
+              <p class="opu glow2 font900 opu-text" >Summary</p>
+            </div>
+          
+            <div [routerLink]="[{ outlets: { navname: ['RIS-perfect-pgb'] } }]"
+            routerLinkActive="router-link-active">
+              <p class="opu glow2 font900 opu-text" >Relay Inventory & Setting</p>
+         </div>
+  
+            
+           <div [routerLink]="[{ outlets: { navname: ['CL-perfect-pgb'] } }]"
+           routerLinkActive="router-link-active">
+              <p class="opu glow2 font900 opu-text" >Calibration Library</p>
+           </div>
+  
+            
+            <div [routerLink]="[{ outlets: { navname: ['OL-perfect-pgb'] } }]"
+            routerLinkActive="router-link-active">
+              <p class="opu glow2 font900 opu-text" >Obsolescence Library</p>
+            </div>
+ 
+            
+            <div [routerLink]="[{ outlets: { navname: ['MH-perfect-pgb'] } }]"
+            routerLinkActive="router-link-active">
+              <p class="opu glow2 font900 opu-text" >Maintenance History</p>
+            </div>
+ 
+          
+            <div [routerLink]="[{ outlets: { navname: ['SI-perfect-pgb'] } }]"
+            routerLinkActive="router-link-active">
+              <p class="opu glow2 font900 opu-text"  >Spare Inventory</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div style="display: flex;width: 85%; height: 50vh;">
+      <router-outlet name="navname"></router-outlet>
+    </div>
+ </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <iframe class="iframe-container-perfect"
+src="http://playground.petronas.com/dashboard/PERFECT4PGB?tab=37642&token=679E92B78EA2779EC41869B9DC430A80&preview=true&perfectToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im51cnN5dWhhZGFoLmFiZHdhaGEiLCJyb2xlIjoidXNlciIsInJlZ2lvbiI6bnVsbCwiaWF0IjoxNTg3OTU5ODMxLCJleHAiOjE1ODc5NjE2MzF9.wxFRQc6iyzTixbKsrfQGvYz61U8Z0bFBE1mjHIyDThc"
+></iframe> -->

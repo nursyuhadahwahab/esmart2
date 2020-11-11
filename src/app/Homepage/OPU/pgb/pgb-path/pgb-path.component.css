@@ -1,0 +1,45 @@
+/* iframe {
+    border: none;
+    width: 140%;
+    height: 305%;
+  } */
+
+  
+.iframe-container {
+  /* overflow: hidden; */
+  z-index: auto;
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  float: left;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  justify-content: center;
+  background-color: rgba(59, 58, 58, 0.479);
+  color: white;
+  border-radius: 15px;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00b1a9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006661;
+}
